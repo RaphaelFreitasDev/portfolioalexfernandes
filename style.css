@@ -332,3 +332,57 @@ textarea {
   width: 100%;
   max-width: 450px;
 }
+
+@media screen and (max-width: 1000px) {
+  nav {
+    max-width: 980px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 980px;
+  }
+
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio {
+    max-width: 980px;
+    margin: 2rem auto;
+  }
+
+  .portfolio .header {
+    width: 100%;
+    max-width: 980px;
+    flex-direction: column;
+  }
+
+  .portfolio .header a {
+    margin-top: 1rem;
+  }
+
+  .portfolio .portfo-items {
+    flex-direction: column;
+    max-width: 980px;
+    padding: 1rem;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 100%;
+  }
+
+  footer .top,
+  footer .bottom {
+    flex-direction: column;
+  }
+
+  footer .top .social-links {
+    margin: 2rem 0;
+  }
+
+  footer a {
+    text-align: center;
+  }
+}
